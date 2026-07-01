@@ -1,9 +1,6 @@
 //
 //  Transaction.hpp
 //  BankSystem2.0
-//
-//  Created by Khutso on 2025/05/02.
-//
 
 #ifndef Transaction_hpp
 #define Transaction_hpp
