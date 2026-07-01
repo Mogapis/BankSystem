@@ -1,9 +1,6 @@
 //
 //  AccountRepository.hpp
 //  BankSystem2.0
-//
-//  Created by Khutso Sekele on 2026/04/05.
-//
 
 #ifndef AccountRepository_hpp
 #define AccountRepository_hpp
