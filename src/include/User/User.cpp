@@ -1,9 +1,6 @@
 //
 //  User.cpp
 //  BankSystem2.0
-//
-//  Created by Khutso Sekele on 2026/01/19.
-//
 
 #include "User.hpp"
 
