@@ -1,9 +1,6 @@
 //
 //  BankAccount.cpp
 //  BankSystem2.0
-//
-//  Created by Khutso on 2025/05/02.
-//
 
 #include "BankAccount.hpp"
 #include <iostream>
