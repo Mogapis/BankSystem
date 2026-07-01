@@ -1,9 +1,6 @@
 //
 //  BankAccount.hpp
 //  BankSystem2.0
-//
-//  Created by Khutso on 2025/05/02.
-//
 
 #ifndef BankAccount_hpp
 #define BankAccount_hpp
