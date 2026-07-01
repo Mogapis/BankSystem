@@ -1,9 +1,6 @@
 //
 //  AccountRepository.cpp
 //  BankSystem2.0
-//
-//  Created by Khutso Sekele on 2026/04/05.
-//
 
 #include "AccountRepository.hpp"
 #include <iostream>
