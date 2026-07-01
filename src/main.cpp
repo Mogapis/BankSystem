@@ -1,9 +1,6 @@
 //
 //  main.cpp
-//  BankSystem2.0
-//
-//  Created by Khutso on 2025/05/02.
-//
+//  BankSystem
 
 #include <iostream>
 #include <limits>
@@ -11,7 +8,7 @@
 #include <fstream>
 #include <vector>
 #include <sstream>
-#include <optional>  // Added this line
+#include <optional>
 
 //Header Files
 #include "include/Account/BankAccount.hpp"
@@ -34,9 +31,9 @@ void Dashboard(User& currentUser, UserRepository& repo, AccountRepository& accRe
 
 int main(int argc, const char * argv[]) {
     
-    Database db("/BankSystem2.0/src/Database/SqliteForm/BankSystem.db");
-    UserRepository repo(db, "/BankSystem2.0/src/Database/Textform/userdata.txt");
-    AccountRepository accRepo(db, "/BankSystem2.0/src/Database/Textform/userdata.txt");
+    Database db("/BankSystem/src/Database/SqliteForm/{databasename}.db");
+    UserRepository repo(db, "/BankSystem/src/Database/Textform/userdata.txt");
+    AccountRepository accRepo(db, "/BankSystem/src/Database/Textform/userdata.txt");
     
     repo.loadUsers();
     
@@ -66,7 +63,7 @@ void menu(UserRepository& repo, AccountRepository& accRepo)
                 cout << "Invalid input. Please enter a number.\n";
                 cin.clear(); // Clear the error flag
                 cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Discard invalid input
-                continue; // Restart loop
+                continue;
             }
 
         switch (option1) {
@@ -94,7 +91,7 @@ void menu(UserRepository& repo, AccountRepository& accRepo)
             default:
                 if (option1 < 1 || option1 > 3) {
                    cout << "Invalid option. Please enter a number between 1 and 3.\n";
-                   continue; // Restart loop
+                   continue;
                }
                 break;
         }
@@ -122,7 +119,7 @@ std::optional<User> Login(UserRepository& repo, AccountRepository& accRepo)
         if (user.getPassword() == password) {
             cout << "\nLogin successful! Welcome " << user.getUserName() << "!\n";
             cout << "Account Number: " << user.getAccountNumber() << "\n\n";
-            return user; // return by value
+            return user; 
         }
     }
     
@@ -156,12 +153,9 @@ bool CreateAccount(UserRepository& repo, AccountRepository& accRepo)
     cout << "Enter your email address: ";
     cin >> email;
     
-    // TODO: Check if email exists
     
     cout << "Enter your phone number: ";
     cin >> phoneNumber;
-    
-    // TODO: Check if Phone number exists
 
     // Use setters to store user details
     newUser.setUserName(username);
