@@ -1,9 +1,6 @@
 //
 //  UserRepository.cpp
 //  BankSystem2.0
-//
-//  Created by Khutso Sekele on 2026/02/07.
-//
 
 #include "UserRepository.hpp"
 #include <fstream>
