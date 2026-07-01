@@ -1,9 +1,6 @@
 //
 //  UserRepository.hpp
 //  BankSystem2.0
-//
-//  Created by Khutso Sekele on 2026/02/07.
-//
 
 #pragma once
 
