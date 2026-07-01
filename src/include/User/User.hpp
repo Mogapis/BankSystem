@@ -1,9 +1,6 @@
 //
 //  User.hpp
 //  BankSystem2.0
-//
-//  Created by Khutso Sekele on 2026/01/19.
-//
 
 #ifndef User_hpp
 #define User_hpp
